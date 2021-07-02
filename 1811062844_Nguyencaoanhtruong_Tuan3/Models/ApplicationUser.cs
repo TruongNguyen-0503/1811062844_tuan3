@@ -18,16 +18,18 @@ namespace _1811062844_Nguyencaoanhtruong_Tuan3.Models
         }
     }
 
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
-    {
-        public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
-        {
-        }
+    //public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    //{
+    //    public DbSet<Course> Courses { get; set; }
+    //    public DbSet<Category> Categories { get; set; }
+    //    public ApplicationDbContext()
+    //        : base("DefaultConnection", throwIfV1Schema: false)
+    //    {
+    //    }
 
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
-    }
+    //    public static ApplicationDbContext Create()
+    //    {
+    //        return new ApplicationDbContext();
+    //    }
+    //}
 }
