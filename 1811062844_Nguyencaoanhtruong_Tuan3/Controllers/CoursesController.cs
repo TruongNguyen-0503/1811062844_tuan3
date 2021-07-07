@@ -31,6 +31,7 @@ namespace _1811062844_Nguyencaoanhtruong_Tuan3.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(CourseViewModel viewModel)
         {
             if (!ModelState.IsValid)
